@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Safe History Cleaner (Advanced)",
+  "version": "2.5",
+  "description": "Automatically deletes adult or unsafe websites and search terms from history.",
+  "icons": {
+    "16": "icons/icon01.png",
+    "48": "icons/icon01.png",
+    "128": "icons/icon01.png"
+  },
+  "permissions": [
+    "history",
+    "webNavigation",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "safe-history-blocker@example.com",
+      "strict_min_version": "91.0"
+    }
+  },
+  "author": "Alpha Dev",
+  "homepage_url": "https://github.com/alpha/safe-history-cleaner"
+}
